@@ -1,0 +1,31 @@
+  <div class="header-bar">
+  <h2>Admin Dashboard - User Data</h2>
+  </div>
+  <button (click)="logout()">Logout</button>
+<hr>
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Quantity</th>
+            <th>Colour</th>
+            <th>Adress</th>
+            <th>Mobile Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users ">
+            <td>{{u.name}}</td>
+            <td>{{u.itemname}}</td>
+            <td>{{u.quantity}}</td>
+            <td>{{u.color}}</td>
+            <td>{{u.adress}}</td>
+            <td>{{u.mobilenumber}}</td>
+            <td>
+                <button (click)=deleteUser(u._id)>Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+

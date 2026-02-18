@@ -1,0 +1,67 @@
+#carfly{
+    background-color: grey;
+
+}
+    #fly{
+        margin-left: 6px;
+        background-color: green;
+      color: whitesmoke;
+
+    }
+    #square{
+          margin-left: 2px;
+        background-color: green;
+      color: whitesmoke;
+
+    }
+    #squarebord{
+        height: 287px;
+    }
+    #dance{
+                height: 287px;
+    }
+    #gadgt{
+        margin-left: 6px;
+        background-color: green;
+      color: whitesmoke;
+
+    }
+  #dressing{
+          margin-left: 6px;
+        background-color: green;
+      color: whitesmoke;
+  }
+  #table{
+                  height: 287px;
+  }
+  #info{
+   
+    background: linear-gradient(to right, rgb(1, 2, 2), rgb(0, 38, 255));
+    height: 250px;
+    color: white;
+  }
+  #adress{
+    margin-left: 1px;
+        margin-top: 50px;
+  }
+  #about{
+    margin-top: 50px;
+  }
+  #contact{
+        margin-top: 50px;
+  }
+  #mian{
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 30px;
+  }
+  #foter{
+ 
+    background-color: black;
+    color: white;
+    height: 30px;
+
+  }
+  .para{
+    margin-left: 80px;
+  }

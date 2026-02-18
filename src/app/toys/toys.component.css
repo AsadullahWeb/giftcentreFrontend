@@ -1,0 +1,93 @@
+.about{
+    margin-top: 40px;
+    margin-left: 60%px;
+}
+.price{
+    margin-left: 170px;
+}
+.button1{
+    border-radius: 20px;
+    background: linear-gradient(to left, black,blue);
+    color: white;
+    
+}
+.doctor{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+#doctor{
+    width: 320px;
+   
+}
+.yellowcar{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+#yellowcar{
+    width: 320px;
+    height: 370px;
+}
+#cardtitle{
+    height: 195px;
+}
+#resturant{
+    width: 320px;
+    height: 370px;
+}
+.resturant{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+.sports{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.playcarbutton{
+    border-radius: 20px;
+    background: linear-gradient(to right,blue,black);
+    color: white;
+    margin-left: 30%;
+    margin-top: 10%;
+  
+}
+.flyinsecur{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+.metalbike{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+.sportcar{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+.minihand{
+    background-color: green;
+    margin-left: 20px;
+    color: white;
+    border: 1px solid black;
+}
+#twondcardline{
+    background: linear-gradient(to right, rgb(211, 207, 207),aqua);
+}
+.othertoy{
+    border-radius: 19px;
+    font-size: 29px;
+    background: linear-gradient(to right, blue,black);
+    color: white;
+    margin-top: 10px;
+    margin-left: 800px;
+}

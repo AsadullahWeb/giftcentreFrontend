@@ -1,0 +1,117 @@
+/* ---------- Global ---------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9; /* Soft light background */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h2, h3, h5 {
+  font-weight: bold;
+  color: #222;
+}
+
+/* ---------- Tissue Image ---------- */
+.tisue {
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+#tisue {
+  margin-left: 26px;
+}
+
+/* ---------- Cards Section ---------- */
+.card {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+.card-text {
+  font-size: 15px;
+  color: #555;
+  min-height: 60px;
+  line-height: 1.6;
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  padding: 8px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+/* ---------- Product Table ---------- */
+.product-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* row gap like cards */
+  margin-top: 30px;
+}
+
+.product-table thead th {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 14px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-table tbody tr {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.product-table tbody tr:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-table td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #444;
+}
+
+.product-table img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.product-table img:hover {
+  transform: scale(1.08);
+}

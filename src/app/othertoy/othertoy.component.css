@@ -1,0 +1,77 @@
+/* Container */
+#all {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Table */
+#table {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Table Head */
+#tablehead th {
+  font-size: 18px;
+  padding: 12px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 1px;
+}
+
+/* Table Body */
+#tablebody td {
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#tablebody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#tablebody tr:hover {
+  background: #f1f7ff;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+/* Toy Images */
+#tablebody img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+#tablebody img:hover {
+  transform: scale(1.05);
+}
+
+/* Common Button Style */
+.order-btn {
+  border-radius: 25px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.order-btn:hover {
+  background: linear-gradient(45deg, #0056b3, #0088cc);
+  transform: translateY(-3px) scale(1.07);
+}

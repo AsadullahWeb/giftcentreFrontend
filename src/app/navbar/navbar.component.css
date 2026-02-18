@@ -1,0 +1,14 @@
+
+.all{
+    margin-right: 16px;
+}
+#navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #000;   apna background */
+  z-index: 1000;
+  text-align: center;
+ 
+}

@@ -1,0 +1,79 @@
+
+ <p (click)="rotpass('/login')">.</p>
+<div class="row">
+    <div class="col-sm-12"><h4>Enter your Information</h4></div>
+</div>
+<div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <label for="name">Name:</label>
+        <input  id="name" formControlName="name" placeholder="Enter your name">
+        <div *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
+  <small *ngIf="myForm.get('name')?.hasError('required')">Please enter your name</small>
+  <small *ngIf="myForm.get('name')?.hasError('minlength')">At least three chracter is required</small>
+        </div>
+        <label for="itemname">ItemName</label>
+        <input  id="itemname" formControlName="itemname" placeholder="enter item name">
+        <div *ngIf="myForm.get('itemname')?.invalid && myForm.get('itemname')?.touched">
+            <small *ngIf="myForm.get('itemname')?.hasError('required')">Please Enter the Item Name</small>
+        <small *ngIf="myForm.get('itemname')?.hasError('minlength')">At least three chracter is required</small>
+        </div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" formControlName="quantity">
+        <div *ngIf="myForm.get('quantity')?.invalid && myForm.get('quantity')?.touched">
+            <small *ngIf="myForm.get('quantity')?.hasError('required')">Please enter your quantity</small>
+            <small *ngIf="myForm.get('quantity')?.hasError('quantity')"></small>
+        </div>
+        <label for="color">Colour</label>
+        <input  id="color" formControlName="color" placeholder="enter your item Colour">
+        <div *ngIf="myForm.get('color')?.invalid && myForm.get('color')?.touched">
+            <small *ngIf="myForm.get('color')?.hasError('required')">Please Enter  your item colour</small>
+            <small *ngIf="myForm.get('color')?.hasError('minlength')">At least three chracter is required</small>
+
+        </div>
+        <label for="adress">Adress:</label>
+        <input id="adress" formControlName="adress" placeholder="Enter your complete adress adress">
+        <div *ngIf="myForm.get('adress')?.invalid && myForm.get('adress')?.touched">
+            <small *ngIf="myForm.get('adress')?.hasError('required')">Enter your a valid adress</small>
+            <small *ngIf="myForm.get('adress')?.hasError('minlength')"></small>
+        </div>
+        <label for="mobilenumber">Mobile Number</label>
+        <input  id="mobilenumber" formControlName="mobilenumber" placeholder="enter your a valid  Phone Number">
+        <div *ngIf="myForm.get('mobilenumber')?.invalid && myForm.get('mobilenumber')?.touched">
+            <small *ngIf="myForm.get('mobilenumber')?.hasError('required')">Mobile Number is required</small>
+            <small *ngIf="myForm.get('mobilenumber')?.hasError('minlength')">Please enter a valid Number</small>
+        </div>
+         <button type="submit" [disabled]="myForm.invalid">submit</button>
+    </form>
+
+
+</div>
+ <!-- <hr> -->
+ <!-- <button type="button" (click)="rotpass('/login')">don't click</button> -->
+
+<!-- <table border="1" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Color</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.itemname }}</td>
+      <td>{{ user.quantity }}</td>
+      <td>{{ user.color }}</td>
+      <td>{{ user.adress }}</td>
+      <td>{{ user.mobilenumber }}</td>
+      <td>
+        <button (click)="deleteUser(user.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table> -->
+

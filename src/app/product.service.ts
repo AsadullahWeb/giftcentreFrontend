@@ -39,7 +39,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductService {
-  private baseUrl = 'http://localhost:3000';
+private baseUrl = 'https://giftcentrebackend.vercel.app';
 
   constructor(private http: HttpClient) {}
 

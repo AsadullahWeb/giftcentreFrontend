@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar>
 <br>
 <br>
 <br>
@@ -126,4 +126,167 @@
 <div class="row" id="foter">
   <div class="col-sm-12"><div ><p class="para">@copyright:Rehman Gift Centre(Mian Channu)</p></div></div>
 </div>
+</div> -->
+
+
+
+<app-navbar></app-navbar>
+
+<div class="container mt-5 pt-5">
+
+  <!-- Moving Text -->
+  <div class="row">
+    <div class="col-12">
+      <marquee style="color: rgb(24,23,23);
+        background: linear-gradient(to right, rgb(121,216,98), rgb(0,204,255));
+        font-weight: bold;
+        font-style: italic;">
+        <h5 class="mb-0 text-center">
+          Rehman Gifts Center Mian Channu - All Gifts And Toys Available At Reasonable Prices |
+          Free Home Delivery In City | Order Now
+        </h5>
+      </marquee>
+    </div>
+  </div>
+
+  <!-- Main Featured Product -->
+  <div class="row align-items-center mt-4">
+    <div class="col-lg-6 col-md-6 col-12 text-center">
+      <img src="../../assets/WhatsApp Image 2025-08-08 at 02.11.30.jpeg"
+        class="img-fluid rounded shadow">
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-12 mt-3">
+      <h4 class="fst-italic">
+        "Big dreams start small"! This toy car is perfect for kids and is sure to
+        bring a smile to their face. With its cool design and vibrant colors,
+        it's a great gift for any little one.
+      </h4>
+      <h5 class="mt-3">
+        Price: 2300
+        <button class="btn btn-success ms-2"
+          (click)="homeuser('/userdata')">Order Now</button>
+      </h5>
+    </div>
+  </div>
+
+  <!-- Product Cards -->
+  <div class="row mt-5">
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/gifts24.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Aeroplane Toy</h5>
+          <p>Blue, Red and White colours available.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/gifts23.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Square Board</h5>
+          <p>Rainbow colored bubble pop toy.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/gifts7.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Dance Cactus</h5>
+          <p>Fun and entertaining toy for kids.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/gifts20.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Dressing Table Toy</h5>
+          <p>Beautiful toy set for kids.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Watches Section -->
+  <div class="row mt-4 justify-content-center">
+
+    <div class="col-lg-4 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/watch1.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Aura Watch</h5>
+          <p>Premium design with unmatched durability.</p>
+          <h6>Price: 4000</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-12 mb-4">
+      <div class="card h-100 bg-success text-white">
+        <img src="../../assets/touch watch.jpeg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Smart Watch</h5>
+          <p>Smart, stylish and comfortable for modern lifestyle.</p>
+          <h6>Price: 2800</h6>
+          <button class="btn btn-light mt-2"
+            (click)="homeuser('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- About Section -->
+  <div class="row mt-5 text-white p-4"
+    style="background: linear-gradient(to right, black, blue);">
+
+    <div class="col-md-4 col-12 mb-3">
+      <h4>About Us</h4>
+      <p>We offer genuine toys and gifts at reasonable prices.
+        Free home delivery in Mian Channu city.</p>
+    </div>
+
+    <div class="col-md-4 col-12 mb-3">
+      <h4>Address</h4>
+      <p>Rehman Gifts Center Banu Bazar
+        Mian Channu District Khanewal (Pakistan)</p>
+    </div>
+
+    <div class="col-md-4 col-12">
+      <h4>Contact</h4>
+      <p>+92 3367151129 (Muhammad Asadullah)<br>
+        +92 3328515129 (Aness Ur Rehman)</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="row bg-dark text-white text-center p-2">
+    <div class="col-12">
+      @copyright: Rehman Gift Centre (Mian Channu)
+    </div>
+  </div>
+
 </div>

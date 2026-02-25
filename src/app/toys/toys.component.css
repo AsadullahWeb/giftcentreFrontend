@@ -1,4 +1,4 @@
-.about{
+/* .about{
     margin-top: 40px;
     margin-left: 60%px;
 }
@@ -90,4 +90,124 @@
     color: white;
     margin-top: 10px;
     margin-left: 800px;
+} */
+
+
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove fixed widths */
+#doctor,
+#yellowcar,
+#resturant {
+  width: 100%;
+  height: auto;
+}
+
+/* Remove card fixed heights */
+#cardtitle {
+  height: auto;
+}
+
+/* Common Card Styling */
+.doctor,
+.yellowcar,
+.resturant,
+.flyinsecur,
+.metalbike,
+.sportcar,
+.minihand {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Sports Section */
+.sports {
+  margin-top: 30px;
+}
+
+/* Button */
+.playcarbutton,
+.button1,
+.othertoy {
+  border-radius: 20px;
+  background: linear-gradient(to right, blue, black);
+  color: white;
+  margin-top: 10px;
+}
+
+/* Remove big margins */
+.price,
+.about {
+  margin-left: 0;
+}
+
+/* Remove 800px margin */
+.othertoy {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+/* Background section */
+#twondcardline {
+  background: linear-gradient(to right, rgb(211, 207, 207), aqua);
+  padding: 20px 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.order-btn {
+  background: linear-gradient(to right, blue, black);
+  color: white;
+  border-radius: 20px;
+}
+
+.more-btn {
+  background: linear-gradient(to right, blue, black);
+  color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 8px 25px;
 }

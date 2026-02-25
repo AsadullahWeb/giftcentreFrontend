@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar> -->
 <!-- <div class="container">
 <marquee style="color: rgb(31, 28, 28);background: linear-gradient(to right, rgb(121, 216, 98), rgb(0, 204, 255));" behavior="app-navbar" direction="left to rainbow-colored">
   <h2>Rehman Gifts Center Mian Channu - All Gifts And Toys Available At Reasonable Prices | Free Home Delivery In City | Order Now</h2>
@@ -26,8 +26,8 @@
 </div>
 </div> -->
 <!-- <br> -->
-
-<br>
+<!-- yaha sa shuru ho raha hai -->
+<!-- <br>
 <br>
 <br>
 
@@ -67,7 +67,8 @@
         <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary" (click)="routes('/userdata')">Order Now</a>
       </div>
     </div>
-  </div>
+  </div> -->
+  <!-- ya pehla si coment h -->
 <!-- 
   <div id="resturant" class="col-sm-3">
     <div class="resturant">
@@ -81,8 +82,9 @@
     </div>
   </div>
 </div> -->
+<!-- end  ya h -->
 
-</div>
+<!-- </div>
 
 <div class="container">
 <div class="row">
@@ -152,4 +154,189 @@
 </div>
 </div>
 <app-toystab></app-toystab>
-<button class="othertoy" (click)="routes('/moretoys')" type="button">More Toys -></button>
+<button class="othertoy" (click)="routes('/moretoys')" type="button">More Toys -></button> -->
+
+
+
+<app-navbar></app-navbar>
+
+<div class="container mt-5 pt-4">
+
+  <!-- ================= FIRST ROW ================= -->
+  <div class="row g-4 mt-3">
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/doctor.jpeg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Doctor Toy Set</h5>
+          <p>A complete doctor kit that sparks creativity and role play.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn order-btn" (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/car red.jpeg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Architect Bricks 3122</h5>
+          <p>Build and design endless creative structures.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn order-btn" (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/car yellow.jpeg" class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Architect Bricks 3128</h5>
+          <p>Colorful blocks set for creative learning.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn order-btn" (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Restaurant Card (NOW INSIDE ROW) -->
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/resturant car.jpeg"
+             class="card-img-top img-fluid" alt="Restaurant Car">
+
+        <div class="card-body text-center">
+          <h5>Restaurant Car Toy</h5>
+          <p>
+            Unique car toy with a restaurant theme.
+            Great for fun and imaginative play.
+          </p>
+          <h6>Price: 2000</h6>
+
+          <button class="btn order-btn"
+                  (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- ✅ row close yahan hoga -->
+
+
+
+  <!-- ================= FEATURED PRODUCT ================= -->
+  <div class="row align-items-center mt-5 g-4">
+
+    <div class="col-lg-6 col-md-6 col-12 text-center">
+      <img src="../../assets/playing car.jpeg"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-12">
+      <h3>
+        Exciting stunt and racing track with a cool car.
+        Perfect for kids who love speed and adventure play.
+      </h3>
+      <h4 class="mt-3">
+        Price: 3500
+        <button class="btn order-btn ms-2"
+                (click)="routes('/userdata')">
+          Order Now
+        </button>
+      </h4>
+    </div>
+
+  </div>
+
+  <!-- ================= SECOND CARDS ROW ================= -->
+  <div class="row mt-5 g-4">
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/flying secur.jpeg"
+             class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Flying Saucer</h5>
+          <p>Exciting flying toy for outdoor fun.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn order-btn"
+                  (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/metal bike.jpeg"
+             class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Metal Bike</h5>
+          <p>Miniature bike toy with realistic design.</p>
+          <h6>Price: 2000</h6>
+          <button class="btn order-btn"
+                  (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/sport car.jpeg"
+             class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Sport Car</h5>
+          <p>Durable racing car toy for speed lovers.</p>
+          <h6>Price: 2700</h6>
+          <button class="btn order-btn"
+                  (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-12">
+      <div class="card product-card h-100">
+        <img src="../../assets/minihand fann.jpg"
+             class="card-img-top img-fluid">
+        <div class="card-body text-center">
+          <h5>Mini Hand Fan</h5>
+          <p>Portable mini fan toy for kids.</p>
+          <h6>Price: 1600</h6>
+          <button class="btn order-btn"
+                  (click)="routes('/userdata')">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= TOYS TAB COMPONENT ================= -->
+  <div class="mt-5">
+    <app-toystab></app-toystab>
+  </div>
+
+  <!-- ================= MORE TOYS BUTTON ================= -->
+  <div class="text-center mt-4">
+    <button class="btn more-btn"
+            (click)="routes('/moretoys')">
+      More Toys →
+    </button>
+  </div>
+
+</div>

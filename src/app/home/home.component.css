@@ -1,4 +1,4 @@
-#carfly{
+/* #carfly{
     background-color: grey;
 
 }
@@ -64,4 +64,103 @@
   }
   .para{
     margin-left: 80px;
+  } */
+
+
+
+
+
+
+
+  /* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove unnecessary left margins */
+#fly, #square, #gadgt, #dressing {
+  margin-left: 0;
+  margin-bottom: 20px;
+  background-color: green;
+  color: white;
+}
+
+/* Remove fixed heights */
+#squarebord,
+#dance,
+#table,
+#carfly {
+  height: auto;
+}
+
+/* Fix mian row margin */
+#mian {
+  margin-top: 25px;
+  margin-left: 0;
+}
+
+/* Info section responsive */
+#info {
+  background: linear-gradient(to right, rgb(1, 2, 2), rgb(0, 38, 255));
+  color: white;
+  padding: 30px 10px;
+  height: auto;
+}
+
+#about,
+#adress,
+#contact {
+  margin-top: 20px;
+}
+
+/* Footer */
+#foter {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  height: auto;
+  text-align: center;
+}
+
+.para {
+  margin-left: 0;
+}
+
+/* Navbar fixed */
+app-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Body padding for fixed navbar */
+body {
+  padding-top: 70px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .row {
+    text-align: center;
   }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+}

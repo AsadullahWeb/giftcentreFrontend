@@ -1,4 +1,4 @@
-
+<!-- 
 <div id="navbar-fixed" class="container">
 <nav style="height: 70px;background: linear-gradient(to right,rgb(177, 162, 207),rgb(25, 46, 212));border-radius: 2%;">
   <div class="container">
@@ -13,4 +13,59 @@
 
   </div>
 </nav>
+</div> -->
+
+
+
+
+
+
+<div id="navbar-fixed">
+  <nav class="navbar navbar-expand-lg custom-navbar">
+
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand">
+        <img src="../../assets/rehman logo.jpg"
+             class="logo-img">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto text-center">
+
+          <li class="nav-item">
+            <a class="nav-link custom-link"
+               (click)="rout('/home')">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link custom-link"
+               (click)="rout('/toys')">Toys</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link custom-link"
+               (click)="rout('/moretoys')">Other Toy</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link custom-link"
+               (click)="rout('/gifts')">Gifts</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 </div>

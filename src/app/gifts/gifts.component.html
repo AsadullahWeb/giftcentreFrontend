@@ -1,116 +1,81 @@
 <app-navbar></app-navbar>
-<br>
-<br>
-<br>
-<!-- <div class="container">
-<marquee style="color: white;background: linear-gradient(to right, rgb(121, 216, 98), rgb(0, 204, 255));" behavior="app-navbar" direction="left to rainbow-colored">
-  <h2>Rehman Gifts Center Mian Channu - All Gifts And Toys Available At Reasonable Prices | Free Home Delivery In City | Order Now</h2>
-</marquee>
-</div> -->
 
-<div class="container">
-<div class="row">
-  <div class="col-sm-4" id="tisue">
-    <img class="tisue" src="../../assets/tissu2.jpg" alt="" width="550px">
-    
-  </div>
-
-  <div class="col-sm-5"><div class="card-body">
-      <h2 class="card-title" style="font-size: 30px;margin-left: 40%;">Stylish Tissue Box</h2>
-      <p class="card-text" style="font-size: 27px;margin-left: 50%;">
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-container">
+    <div class="hero-image">
+      <img src="../../assets/tissu2.jpg" alt="Stylish Tissue Box">
+    </div>
+    <div class="hero-text">
+      <h2>Stylish Tissue Box</h2>
+      <p>
         Elegant marble design with golden borders for a premium look.<br>
         Perfect addition for living rooms, offices, and guest spaces.<br>
         Durable build with stylish finishing that enhances your decor.<br>
         A thoughtful gift choice for family and friends.
       </p>
       <h3>Price: 1500</h3>
-      <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary" (click)="decoration('/userdata')" >Order Now</a>
-    </div></div>
-</div>
-</div>
-<div class="container">
-<div class="row">
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/main watch.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Silver Reward Watch</h5>
-        <p class="card-text">Classic silver design with quartz precision. A timeless watch for everyday elegance.</p>
-        <h3>Price: 2000</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/rolex.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Rolex Silver (White Dial)</h5>
-        <p class="card-text">Elegant Rolex-inspired silver watch with a clean white dial. Stylish and durable choice.</p>
-        <h3>Price: 2200</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/jsla.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Brown Leather Strap Watch</h5>
-        <p class="card-text">Premium leather strap with stylish modern dial. Comfortable and classy for daily wear.</p>
-        <h3>Price: 1800</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/quartz.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Gold & Silver Quartz Watch</h5>
-        <p class="card-text">Two-tone luxury design combining gold and silver. A perfect blend of shine and elegance.</p>
-        <h3>Price: 2500</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
-      </div>
+      <button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button>
     </div>
   </div>
 </div>
-</div>
 
-<div class="container">
-<div class="row">
-  <div class="col-sm-2"></div>
-
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/watch2.jpg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Golden Royal Watch</h5>
-        <p class="card-text">Full golden premium design for a royal look. Adds a classy touch to every outfit.</p>
-        <h3>Price: 3000</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
+<!-- Cards Section -->
+<div class="container cards-container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="../../assets/main watch.jpeg" alt="Silver Reward Watch">
+        <div class="card-body">
+          <h5 class="card-title">Silver Reward Watch</h5>
+          <p class="card-text">Classic silver design with quartz precision. A timeless watch for everyday elegance.</p>
+          <h3>Price: 2000</h3>
+          <button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-sm-3">
-    <div class="card">
-      <img src="../../assets/green rolex.jpeg" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title">Rolex Green Edition</h5>
-        <p class="card-text">Stylish Rolex-inspired watch with a bold green dial. Perfect for those who love unique style.</p>
-        <h3>Price: 2800</h3>
-        <a style="margin-left: 34px;border-radius: 50px;" class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</a>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="../../assets/rolex.jpeg" alt="Rolex Silver (White Dial)">
+        <div class="card-body">
+          <h5 class="card-title">Rolex Silver (White Dial)</h5>
+          <p class="card-text">Elegant Rolex-inspired silver watch with a clean white dial. Stylish and durable choice.</p>
+          <h3>Price: 2200</h3>
+          <button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="../../assets/jsla.jpeg" alt="Brown Leather Strap Watch">
+        <div class="card-body">
+          <h5 class="card-title">Brown Leather Strap Watch</h5>
+          <p class="card-text">Premium leather strap with stylish modern dial. Comfortable and classy for daily wear.</p>
+          <h3>Price: 1800</h3>
+          <button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card">
+        <img src="../../assets/quartz.jpeg" alt="Gold & Silver Quartz Watch">
+        <div class="card-body">
+          <h5 class="card-title">Gold & Silver Quartz Watch</h5>
+          <p class="card-text">Two-tone luxury design combining gold and silver. Perfect blend of shine and elegance.</p>
+          <h3>Price: 2500</h3>
+          <button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Product Table Section (Decoration Products with images) -->
 <div class="container mt-4">
-  <table border="1" width="100%" cellpadding="10" class="product-table">
+  <table class="product-table">
     <thead>
       <tr>
         <th>Sr No</th>
@@ -122,68 +87,62 @@
       </tr>
     </thead>
     <tbody>
-      
       <tr>
         <td>1</td>
         <td><img src="../../assets/decoration 1.jpeg" alt="Red Stand"></td>
         <td>Red Colour Decoration Stand</td>
-        <td><b>Elegant Decoration Piece</b> – Premium red stand with stylish design, perfect for living rooms and offices.</td>
+        <td><b>Elegant Decoration Piece</b> – Premium red stand with stylish design.</td>
         <td>1500</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>2</td>
         <td><img src="../../assets/decoration 2.jpeg" alt="Golden Flower"></td>
         <td>Crystal Lighting Flower</td>
-         <td><b>Crystal Lighting Flower</b> – Sparkling decor piece with lighting effect that brightens up your room.</td>
+        <td><b>Crystal Lighting Flower</b> – Sparkling decor piece with lighting effect.</td>
         <td>1800</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>3</td>
-        <td><img src="../../assets/decoration 3.jpeg" alt=" Golden Flower Decoration"></td>
-        <td> Golden Flower Decoration</td>
-       <td><b>Golden Flower Decor</b> – Bright and elegant design, ideal for side tables, shelves, or gift purposes.</td>
+        <td><img src="../../assets/decoration 3.jpeg" alt="Golden Flower Decoration"></td>
+        <td>Golden Flower Decoration</td>
+        <td><b>Golden Flower Decor</b> – Bright and elegant design, ideal for shelves or gifts.</td>
         <td>2000</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>4</td>
         <td><img src="../../assets/decoration 4.jpeg" alt="Modern Table Decor"></td>
         <td>Modern Table Decor</td>
-        <td><b>Modern Table Decor</b> – Stylish and unique piece that adds charm to your interior decoration.</td>
+        <td><b>Modern Table Decor</b> – Stylish piece that adds charm to your interior decoration.</td>
         <td>1700</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>5</td>
         <td><img src="../../assets/black watch.jpeg" alt="Rolex Watch"></td>
         <td>Rolex Watch</td>
-        <td><b>Quartz Classic Watch</b> – Silver-toned quartz watch with precision and timeless elegance.</td>
+        <td><b>Quartz Classic Watch</b> – Silver-toned quartz watch with precision and elegance.</td>
         <td>2300</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>6</td>
-        <td><img src="../../assets/watchtom.jpg" alt="Square Edition Watch"></td>
+        <td><img src="../../assets/watchtom.jpg" alt="Tom Square Edition Watch"></td>
         <td>Tom Square Edition Watch</td>
-        <td><b>Royal Square Edition</b> – Bold square dial with gold & silver tones, a classy and modern choice.</td>
+        <td><b>Royal Square Edition</b> – Bold square dial with gold & silver tones.</td>
         <td>2700</td>
-        <td><button class="btn btn-primary"(click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
       <tr>
         <td>7</td>
         <td><img src="../../assets/pouch.jpeg" alt="Money Pouch"></td>
         <td>Money Pouch</td>
-        <td><b>Stylish Money Pouch</b> – Compact and durable pouch for keeping money & coins safe. Easy to carry daily.</td>
+        <td><b>Stylish Money Pouch</b> – Compact and durable pouch for money & coins.</td>
         <td>1200</td>
-        <td><button class="btn btn-primary" (click)="decoration('/userdata')" >Order Now</button></td>
+        <td><button class="btn btn-primary" (click)="decoration('/userdata')">Order Now</button></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-</div>
-
-
-

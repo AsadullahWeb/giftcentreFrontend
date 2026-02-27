@@ -6,8 +6,8 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Table */
-#table {
+/* Desktop Table */
+.desktop-table {
   width: 95%;
   margin: auto;
   border-collapse: collapse;
@@ -17,7 +17,6 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Table Head */
 #tablehead th {
   font-size: 18px;
   padding: 12px;
@@ -28,7 +27,6 @@
   letter-spacing: 1px;
 }
 
-/* Table Body */
 #tablebody td {
   font-size: 16px;
   padding: 12px;
@@ -46,10 +44,12 @@
   transition: 0.3s;
 }
 
-/* Toy Images */
+/* Toy Images - Desktop Table */
 #tablebody img {
   border-radius: 10px;
   object-fit: cover;
+  width: 260px; /* optimized */
+  height: 90px; /* maintain ratio */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: 0.3s;
 }
@@ -58,7 +58,16 @@
   transform: scale(1.05);
 }
 
-/* Common Button Style */
+/* Mobile Cards */
+.mobile-cards .card img {
+  width: 100%;
+  max-width: 180px; /* optimized */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
 .order-btn {
   border-radius: 25px;
   background: linear-gradient(45deg, #007bff, #00c6ff);
@@ -74,4 +83,144 @@
 .order-btn:hover {
   background: linear-gradient(45deg, #0056b3, #0088cc);
   transform: translateY(-3px) scale(1.07);
+}
+
+/* Mobile Cards */
+.mobile-cards {
+  display: none; /* Hidden by default */
+}
+
+.mobile-cards .card {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.mobile-cards .card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-table {
+    display: none; /* Hide table on small screens */
+  }
+  .mobile-cards {
+    display: block; /* Show cards on mobile */
+  }
+}
+
+
+
+
+/* Container */
+#all {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow-x: auto; /* table scroll for small screens */
+}
+
+/* Table */
+#table {
+  width: 100%;
+  min-width: 800px; /* ensures table looks okay on desktop */
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Table Head */
+#tablehead th {
+  font-size: 16px;
+  padding: 10px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 1px;
+}
+
+/* Table Body */
+#tablebody td {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#tablebody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#tablebody tr:hover {
+  background: #f1f7ff;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+/* Toy Images */
+#tablebody img {
+  border-radius: 10px;
+  width: 100%; /* image fills container width */
+  max-width: 140px; /* desktop size */
+  height: auto; /* maintain original aspect ratio */
+  object-fit: contain; /* show full image without cropping */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+#tablebody img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+#tablebody button {
+  border-radius: 25px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+#tablebody button:hover {
+  background: linear-gradient(45deg, #0056b3, #0088cc);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  #table {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #tablebody img {
+    max-width: 100px; /* smaller images on mobile */
+  }
+
+  #tablehead th, #tablebody td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #tablebody button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 }

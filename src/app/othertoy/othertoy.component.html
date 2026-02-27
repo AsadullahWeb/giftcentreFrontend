@@ -1,173 +1,42 @@
 <app-navbar></app-navbar>
-<br>
-<br>
-<br>
+<br><br><br>
 
 <div id="all">
-<table id="table">
-    <thead id="tablehead">
-        <tr>
-          <th style="border: 1px solid black;text-align: center;">Sr</th>
-          <th style="border: 1px solid black;text-align: center;">Image</th>
-          <th style="border: 1px solid black;text-align: center;">Name</th>
-          <th style="border: 1px solid black;text-align: center;">About</th>
-          <th style="border: 1px solid black;text-align: center;">Price</th>
-          <th style="border: 1px solid black;"></th>
-        </tr>
-    </thead>
-    <tbody id="tablebody">
-        <tr>
-            <td style="border: 1px solid black;">1</td>
-            <td style="border: 1px solid black;"><img src="../../assets/lcd tab.jpeg" alt="" width="140px"></td>
-            <td style="border: 1px solid black;">LCD Tab</td>
-            <td style="border: 1px solid black;">Fun writing & drawing pad for kids. Eco-friendly, lightweight and reusable.</td>
-            <td style="border: 1px solid black;">900</td>
-            <td style="border: 1px solid black;"><button class="lcd" (click)="othertoy('/userdata')" type="button">Order Now</button></td>
-        </tr>
-        
-        <tr>
-            <td style="border: 1px solid black;">2</td>
-            <td style="border: 1px solid black;"><img src="../../assets/dance rebot.jpeg" alt="" width="140px"></td>
-            <td style="border: 1px solid black;">Dance Robot</td>
-            <td style="border: 1px solid black;">Interactive robot with lights & music. Perfect for fun dancing moments.</td>
-            <td style="border: 1px solid black;">1400</td>
-            <td style="border: 1px solid black;"><button class="dance" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-        
-        <tr>
-            <td style="border: 1px solid black;">3</td>
-            <td style="border: 1px solid black;"><img src="../../assets/dinasor.jpeg" alt="" width="170px"></td>
-            <td style="border: 1px solid black;">Dinosaur Toy</td>
-            <td style="border: 1px solid black;">Realistic dinosaur toy with sound & movement. Brings adventure to playtime.</td>
-            <td style="border: 1px solid black;">800</td>
-            <td style="border: 1px solid black;"><button class="dinasor" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
 
-        <tr>
-            <td style="border: 1px solid black;">4</td>
-            <td style="border: 1px solid black;"><img style="width: 210px;" src="../../assets/money gun.jpeg" alt="" width="330px"></td>
-            <td style="border: 1px solid black;">Money Gun</td>
-            <td style="border: 1px solid black;">Cool toy gun that shoots play money. Fun choice for parties and games.</td>
-            <td style="border: 1px solid black;">1100</td>
-            <td style="border: 1px solid black;"><button class="lcd" (click)="othertoy('/userdata')" type="button">Order Now</button></td>
-        </tr>
+  <!-- Desktop Table -->
+  <table id="table" class="desktop-table">
+      <thead id="tablehead">
+          <tr>
+            <th>Sr</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>About</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+      </thead>
+      <tbody id="tablebody">
+          <tr *ngFor="let toy of toys; let i = index">
+              <td>{{i + 1}}</td>
+              <td><img [src]="toy.img" alt="{{toy.name}}"></td>
+              <td>{{toy.name}}</td>
+              <td>{{toy.about}}</td>
+              <td>{{toy.price}}</td>
+              <td><button class="order-btn" (click)="othertoy('/userdata')">Order Now</button></td>
+          </tr>
+      </tbody>
+  </table>
 
-        <tr>
-            <td style="border: 1px solid black;">5</td>
-            <td style="border: 1px solid black;"><img style="height: 180px;" src="../../assets/pj mask slide.jpeg" alt="" width="220px"></td>
-            <td style="border: 1px solid black;">PJ Mask Slide</td>
-            <td style="border: 1px solid black;">Exciting PJ Mask themed slide toy. Keeps kids active and entertained.</td>
-            <td style="border: 1px solid black;">700</td>
-            <td style="border: 1px solid black;"><button class="slide" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
+  <!-- Mobile Cards -->
+  <div class="mobile-cards">
+      <div class="card" *ngFor="let toy of toys; let i = index">
+          <h5>Sr: {{i + 1}}</h5>
+          <img [src]="toy.img" alt="{{toy.name}}">
+          <h4>{{toy.name}}</h4>
+          <p>{{toy.about}}</p>
+          <h5>Price: {{toy.price}}</h5>
+          <button class="order-btn" (click)="othertoy('/userdata')">Order Now</button>
+      </div>
+  </div>
 
-        <tr>
-            <td style="border: 1px solid black;">6</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/super hero collection.jpeg" alt="" width="270px"></td>
-            <td style="border: 1px solid black;">Super Hero Collection</td>
-            <td style="border: 1px solid black;">Set of action heroes for endless role-play fun. Perfect for little fans.</td>
-            <td style="border: 1px solid black;">600</td>
-            <td style="border: 1px solid black;"><button class="superhero" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">7</td>
-            <td style="border: 1px solid black;"><img src="../../assets/reccue.jpeg" alt="" width="220px"></td>
-            <td style="border: 1px solid black;">Fire Rescue Toy</td>
-            <td style="border: 1px solid black;">Rescue vehicle toy with realistic details. Inspires bravery and adventure.</td>
-            <td style="border: 1px solid black;">900</td>
-            <td style="border: 1px solid black;"><button class="firerescue" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">8</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/racing car.jpeg" alt="" width="220px"></td>
-            <td style="border: 1px solid black;">Racing Car Toy</td>
-            <td style="border: 1px solid black;">Fast and stylish racing car. Perfect for exciting track competitions.</td>
-            <td style="border: 1px solid black;">1500</td>
-            <td style="border: 1px solid black;"><button class="racingcar" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">9</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/spray raek car.jpeg" alt="" width="280px"></td>
-            <td style="border: 1px solid black;">Spray Rock Crawler</td>
-            <td style="border: 1px solid black;">Unique crawler car with spray effect. Fun, durable and eye-catching.</td>
-            <td style="border: 1px solid black;">1200</td>
-            <td style="border: 1px solid black;"><button class="lcd" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">10</td>
-            <td style="border: 1px solid black;"><img style="height: 189px;" src="../../assets/remote control car.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Remote Control Car</td>
-            <td style="border: 1px solid black;">High-speed RC car with smooth control. Kids’ favorite racing companion.</td>
-            <td style="border: 1px solid black;">1600</td>
-            <td style="border: 1px solid black;"><button class="remote" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">11</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/gear plane.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Gear Plane Toy</td>
-            <td style="border: 1px solid black;">360° rotating plane with lights & gears. Fun, colorful and exciting.</td>
-            <td style="border: 1px solid black;">999</td>
-            <td style="border: 1px solid black;"><button class="plane" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">12</td>
-            <td style="border: 1px solid black;"><img style="height: 180px;" src="../../assets/police super toy.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Police Super Toy</td>
-            <td style="border: 1px solid black;">Stylish stunt police car with lights. A perfect action toy for kids.</td>
-            <td style="border: 1px solid black;">1100</td>
-            <td style="border: 1px solid black;"><button class="police" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">13</td>
-            <td style="border: 1px solid black;"><img style="height: 197px;" src="../../assets/racing control.jpeg" alt="" width="310px"></td>
-            <td style="border: 1px solid black;">Racing Control Car</td>
-            <td style="border: 1px solid black;">Remote control racing car with high speed. Durable and stylish design.</td>
-            <td style="border: 1px solid black;">1600</td>
-            <td style="border: 1px solid black;"><button class="racingcontrol" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">14</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/dinasaur elctric track.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Dinosaur Electric Track</td>
-            <td style="border: 1px solid black;">Electric dinosaur track with lights & sounds. Improves kids’ creativity.</td>
-            <td style="border: 1px solid black;">900</td>
-            <td style="border: 1px solid black;"><button class="danasourelectrictrack" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">15</td>
-            <td style="border: 1px solid black;"><img style="height: 180px;" src="../../assets/projection flash light.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Projection Flash Light</td>
-            <td style="border: 1px solid black;">Cool projector light with dino, bird & ocean images. Perfect bedtime toy.</td>
-            <td style="border: 1px solid black;">600</td>
-            <td style="border: 1px solid black;"><button class="projectionlight" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">16</td>
-            <td style="border: 1px solid black;"><img style="height: 180px;" src="../../assets/bubblegun.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Bubble Gun</td>
-            <td style="border: 1px solid black;">Automatic bubble gun with strong build. Fun outdoor toy for kids.</td>
-            <td style="border: 1px solid black;">1100</td>
-            <td style="border: 1px solid black;"><button class="lcd" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-
-        <tr>
-            <td style="border: 1px solid black;">17</td>
-            <td style="border: 1px solid black;"><img style="height: 190px;" src="../../assets/dolphin.jpeg" alt="" width="300px"></td>
-            <td style="border: 1px solid black;">Gear Dolphin Toy</td>
-            <td style="border: 1px solid black;">Transparent dolphin toy with gear movement, lights & music.</td>
-            <td style="border: 1px solid black;">1000</td>
-            <td style="border: 1px solid black;"><button class="lcd" (click)="othertoy('/userdata')"  type="button">Order Now</button></td>
-        </tr>
-    </tbody>
-</table>
 </div>

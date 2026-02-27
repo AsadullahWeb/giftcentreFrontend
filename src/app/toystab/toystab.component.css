@@ -1,60 +1,53 @@
-/* Main container */
 .alltable {
-  background: linear-gradient(135deg, #1e3c72, #2a5298); /* premium blue gradient */
-  color: whitesmoke;
-  margin-top: 20px;
-  padding: 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
 }
 
-/* Table styling */
-table {
-  width: 95%;
-  margin: auto;
+/* Responsive wrapper */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Table */
+.custom-table {
+  width: 100%;
   border-collapse: collapse;
   background: #ffffff;
-  color: #333;
   border-radius: 12px;
   overflow: hidden;
 }
 
-/* Header styling */
+/* Header */
 .tableheading th {
-  font-size: 18px;
-  background: linear-gradient(to right, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   padding: 15px;
-  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-/* Table cells */
-table th, 
-table td {
-  border: 1px solid #ddd;
-  text-align: center;
+/* Cells */
+.custom-table th,
+.custom-table td {
   padding: 12px;
-  transition: 0.2s;
+  text-align: center;
+  border-bottom: 1px solid #eee;
 }
 
-table tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-table tr:hover {
-  background: #f1f7ff;
+/* Row hover */
+.custom-table tbody tr:hover {
+  background: #f3f6ff;
   transform: scale(1.01);
 }
 
 /* Images */
 .toy-img {
-  width: 220px;
-  height: 180px;
+  width: 150px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
 }
 
@@ -62,20 +55,34 @@ table tr:hover {
   transform: scale(1.05);
 }
 
-/* Order button */
+/* Button */
 .order-btn {
-  border-radius: 30px;
-  background: linear-gradient(45deg, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  transition: 0.3s;
   cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 
 .order-btn:hover {
-  background: linear-gradient(45deg, #0056b3, #0088cc);
-  transform: translateY(-3px) scale(1.07);
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .toy-img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
 }

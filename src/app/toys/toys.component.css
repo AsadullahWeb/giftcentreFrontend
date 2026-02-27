@@ -95,119 +95,98 @@
 
 
 /* Make all images responsive */
+/* ================= GLOBAL ================= */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Remove fixed widths */
-#doctor,
-#yellowcar,
-#resturant {
-  width: 100%;
-  height: auto;
-}
-
-/* Remove card fixed heights */
-#cardtitle {
-  height: auto;
-}
-
-/* Common Card Styling */
-.doctor,
-.yellowcar,
-.resturant,
-.flyinsecur,
-.metalbike,
-.sportcar,
-.minihand {
-  background-color: green;
-  color: white;
-  border: 1px solid black;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-/* Sports Section */
-.sports {
-  margin-top: 30px;
-}
-
-/* Button */
-.playcarbutton,
-.button1,
-.othertoy {
-  border-radius: 20px;
-  background: linear-gradient(to right, blue, black);
-  color: white;
-  margin-top: 10px;
-}
-
-/* Remove big margins */
-.price,
-.about {
-  margin-left: 0;
-}
-
-/* Remove 800px margin */
-.othertoy {
-  display: block;
-  margin: 20px auto;
-  font-size: 20px;
-}
-
-/* Background section */
-#twondcardline {
-  background: linear-gradient(to right, rgb(211, 207, 207), aqua);
-  padding: 20px 0;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .row {
-    text-align: center;
-  }
-
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* ================= PRODUCT CARD ================= */
 .product-card {
-  background-color: green;
-  color: white;
-  border: 1px solid black;
-  transition: 0.3s;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
 
 .product-card:hover {
-  transform: scale(1.03);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
+/* Card Image */
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Card Body */
+.product-card .card-body {
+  padding: 15px;
+}
+
+.product-card h5 {
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= BUTTONS ================= */
 .order-btn {
-  background: linear-gradient(to right, blue, black);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  border-radius: 20px;
+  border-radius: 25px;
+  padding: 6px 18px;
+  border: none;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .more-btn {
-  background: linear-gradient(to right, blue, black);
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  border-radius: 25px;
+  border-radius: 30px;
+  padding: 8px 30px;
   font-size: 18px;
-  padding: 8px 25px;
+  border: none;
+  transition: 0.3s;
+}
+
+.more-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ================= FEATURED SECTION ================= */
+.shadow {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2) !important;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .product-card img {
+    height: 180px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .order-btn {
+    margin-top: 10px;
+  }
+
 }

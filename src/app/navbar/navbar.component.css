@@ -1,14 +1,43 @@
-
-.all{
-    margin-right: 16px;
-}
-#navbar-fixed {
+/* Navbar Fixed */
+#navbar-fixed{
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  /* background-color: #000;   apna background */
   z-index: 1000;
-  text-align: center;
- 
+}
+
+/* Body spacing */
+body{
+  padding-top: 85px;
+}
+
+/* Custom Navbar Style */
+.custom-navbar{
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 10px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo-img{
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.logo-img:hover{
+  transform: scale(1.1);
+}
+
+/* Nav Links */
+.custom-link{
+  color: white !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.custom-link:hover{
+  color: #ffd700 !important;
+  transform: translateY(-2px);
 }
